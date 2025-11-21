@@ -22,7 +22,7 @@ export function Sidebar({ className }: SidebarProps) {
       <div className="space-y-4 py-4 flex flex-col h-full">
         <div className="px-3 py-2 flex-1">
           <div className="flex items-center gap-3 px-4 mb-10 mt-2">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
+            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
               <ShieldAlert className="h-6 w-6 text-white" />
             </div>
             <div>

@@ -23,7 +23,7 @@ export default function SettingsPage() {
       <div className="p-6 max-w-5xl mx-auto space-y-8 pb-12">
         <div>
           <div className="flex items-center gap-3 mb-2">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-blue-500/20">
+            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
               <SettingsIcon className="h-5 w-5 text-white" />
             </div>
             <div>
@@ -75,16 +75,16 @@ export default function SettingsPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <Label htmlFor="first-name" className="text-sm font-medium text-slate-700 dark:text-slate-300">First name</Label>
-                    <Input id="first-name" defaultValue="Joshua" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-500" />
+                    <Input id="first-name" defaultValue="Apurva" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-orange-500 dark:focus:border-orange-500" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="last-name" className="text-sm font-medium text-slate-700 dark:text-slate-300">Last name</Label>
-                    <Input id="last-name" defaultValue="Carter" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-500" />
+                    <Input id="last-name" defaultValue="Carter" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-orange-500 dark:focus:border-orange-500" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email" className="text-sm font-medium text-slate-700 dark:text-slate-300">Email</Label>
-                  <Input id="email" type="email" defaultValue="joshua.carter@cyberguard.com" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-500" />
+                  <Input id="email" type="email" defaultValue="joshua.carter@cyberguard.com" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-orange-500 dark:focus:border-orange-500" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="role" className="text-sm font-medium text-slate-700 dark:text-slate-300">Role</Label>
@@ -92,7 +92,7 @@ export default function SettingsPage() {
                   <p className="text-xs text-slate-500 dark:text-slate-400 font-normal">Role is managed by your organization administrator.</p>
                 </div>
                 <div className="pt-2">
-                  <Button className="bg-gradient-to-br from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium rounded-lg px-6 h-10 shadow-md shadow-blue-500/30 hover:shadow-lg hover:shadow-blue-500/40 transition-all">
+                  <Button className="bg-gradient-to-br from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-medium rounded-lg px-6 h-10 shadow-md shadow-orange-500/30 hover:shadow-lg hover:shadow-orange-500/40 transition-all">
                     Save Changes
                   </Button>
                 </div>
@@ -110,7 +110,7 @@ export default function SettingsPage() {
                 <div className="flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800/30">
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
-                      <Shield className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                      <Shield className="h-4 w-4 text-orange-600 dark:text-orange-400" />
                       <Label className="text-base font-semibold text-slate-900 dark:text-white">Two-factor Authentication</Label>
                     </div>
                     <p className="text-sm text-slate-600 dark:text-slate-400 font-normal">Add an extra layer of security to your account.</p>
@@ -120,7 +120,7 @@ export default function SettingsPage() {
                 <div className="flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800/30">
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
-                      <Shield className="h-4 w-4 text-blue-600 dark:text-blue-400" />
+                      <Shield className="h-4 w-4 text-orange-600 dark:text-orange-400" />
                       <Label className="text-base font-semibold text-slate-900 dark:text-white">Session Timeout</Label>
                     </div>
                     <p className="text-sm text-slate-600 dark:text-slate-400 font-normal">Automatically log out after 30 minutes of inactivity.</p>
@@ -135,18 +135,18 @@ export default function SettingsPage() {
                   <div className="grid gap-3">
                     <div className="space-y-2">
                       <Label htmlFor="current-password" className="text-sm font-medium text-slate-700 dark:text-slate-300">Current password</Label>
-                      <Input id="current-password" type="password" placeholder="Enter current password" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-500" />
+                      <Input id="current-password" type="password" placeholder="Enter current password" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-orange-500 dark:focus:border-orange-500" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="new-password" className="text-sm font-medium text-slate-700 dark:text-slate-300">New password</Label>
-                      <Input id="new-password" type="password" placeholder="Enter new password" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-500" />
+                      <Input id="new-password" type="password" placeholder="Enter new password" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-orange-500 dark:focus:border-orange-500" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="confirm-password" className="text-sm font-medium text-slate-700 dark:text-slate-300">Confirm new password</Label>
-                      <Input id="confirm-password" type="password" placeholder="Confirm new password" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-blue-500 dark:focus:border-blue-500" />
+                      <Input id="confirm-password" type="password" placeholder="Confirm new password" className="h-11 rounded-lg border-slate-200 dark:border-slate-700 focus:border-orange-500 dark:focus:border-orange-500" />
                     </div>
                   </div>
-                  <Button className="bg-gradient-to-br from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium rounded-lg px-6 h-10 shadow-md shadow-blue-500/30 hover:shadow-lg hover:shadow-blue-500/40 transition-all">
+                  <Button className="bg-gradient-to-br from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-medium rounded-lg px-6 h-10 shadow-md shadow-orange-500/30 hover:shadow-lg hover:shadow-orange-500/40 transition-all">
                     Update Password
                   </Button>
                 </div>
@@ -177,8 +177,8 @@ export default function SettingsPage() {
                 </div>
                 <div className="flex items-center justify-between p-4 rounded-xl bg-slate-50 dark:bg-slate-800/30 hover:bg-slate-100 dark:hover:bg-slate-800/50 transition-colors">
                   <div className="flex items-center gap-4">
-                    <div className="h-10 w-10 rounded-lg bg-blue-100 dark:bg-blue-900/20 flex items-center justify-center">
-                      <Globe className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                    <div className="h-10 w-10 rounded-lg bg-orange-100 dark:bg-orange-900/20 flex items-center justify-center">
+                      <Globe className="h-5 w-5 text-orange-600 dark:text-orange-400" />
                     </div>
                     <div className="space-y-1">
                       <Label className="text-base font-semibold text-slate-900 dark:text-white">Threat Intelligence</Label>

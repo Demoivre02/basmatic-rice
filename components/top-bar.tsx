@@ -26,7 +26,7 @@ export function TopBar() {
         </Button>
         <div className="flex items-center gap-3 pl-4">
           <div className="text-right hidden md:block">
-            <p className="text-sm font-semibold leading-tight text-slate-900 dark:text-slate-100 tracking-tight">Joshua Carter</p>
+            <p className="text-sm font-semibold leading-tight text-slate-900 dark:text-slate-100 tracking-tight">Apurva</p>
             <p className="text-xs text-slate-600 dark:text-slate-400 mt-1 font-normal">VP of Security</p>
           </div>
           <Avatar className="h-9 w-9 border-2 border-background shadow-sm">

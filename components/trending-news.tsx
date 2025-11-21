@@ -6,15 +6,15 @@ export function TrendingNews() {
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
       <Card className="bg-card/50 border-border hover:bg-card/80 transition-colors cursor-pointer group">
         <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-2">
-          <CardTitle className="text-sm font-medium text-blue-400">Global Threat Intel</CardTitle>
-          <Globe className="h-4 w-4 text-muted-foreground group-hover:text-blue-400 transition-colors" />
+          <CardTitle className="text-sm font-medium text-orange-400">Global Threat Intel</CardTitle>
+          <Globe className="h-4 w-4 text-muted-foreground group-hover:text-orange-400 transition-colors" />
         </CardHeader>
         <CardContent>
           <div className="text-lg font-bold leading-tight mb-2">Ransomware Group "DarkSide" Resurfaces</div>
           <p className="text-xs text-muted-foreground">
             New variants targeting healthcare sector detected in 3 regions.
           </p>
-          <div className="mt-3 flex items-center text-xs text-blue-400 font-medium">
+          <div className="mt-3 flex items-center text-xs text-orange-400 font-medium">
             Read Analysis <ArrowUpRight className="ml-1 h-3 w-3" />
           </div>
         </CardContent>

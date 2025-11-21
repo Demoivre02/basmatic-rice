@@ -69,7 +69,7 @@ export function SecurityNews() {
                 <div className="mt-1">
                   {item.type === "alert" && <AlertTriangle className="h-4 w-4 text-destructive" />}
                   {item.type === "warning" && <ShieldCheck className="h-4 w-4 text-orange-400" />}
-                  {item.type === "info" && <Info className="h-4 w-4 text-blue-400" />}
+                  {item.type === "info" && <Info className="h-4 w-4 text-orange-400" />}
                 </div>
                 <div className="flex-1 space-y-1">
                   <div className="flex items-center justify-between">

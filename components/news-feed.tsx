@@ -1,70 +1,88 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ShieldAlert, Globe, FileText, AlertTriangle, Lock, Server, Wifi } from "lucide-react"
+import { ShieldAlert, Globe, FileText, AlertTriangle, Lock, Server, Wifi, Activity } from "lucide-react"
 
 const newsItems = [
   {
-    title: "Phishing Campaign Targets Financial Sector",
-    description: "Sophisticated spear-phishing attacks impersonating major banks detected across multiple regions.",
-    severity: "High",
-    type: "Threat",
+    title: "Zero-Day Exploit Targeting Enterprise Cloud Infrastructure",
+    description: "Active exploitation detected in cloud container orchestration platforms. Immediate patching required for Kubernetes and Docker environments.",
+    severity: "Critical",
+    type: "Zero-Day",
     icon: ShieldAlert,
     color: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
-    time: "2h ago",
+    time: "1h ago",
   },
   {
-    title: "Critical CVE-2024-22016 in Windows OS",
-    description: "Remote code execution vulnerability found in Windows Kernel. Immediate patching recommended.",
+    title: "CrowdStrike EDR: Advanced Persistent Threat Detected",
+    description: "Multi-stage APT campaign targeting financial services sector. Indicators of compromise shared across threat intelligence feeds.",
     severity: "Critical",
+    type: "Threat Intel",
+    icon: ShieldAlert,
+    color: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
+    time: "3h ago",
+  },
+  {
+    title: "Tenable: Critical Vulnerability in Network Infrastructure",
+    description: "CVE-2024-XXXXX affects multiple network devices. Risk reduction trends show 23% increase in exploitable vulnerabilities over past week.",
+    severity: "High",
     type: "Vulnerability",
     icon: AlertTriangle,
-    color: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
-    time: "4h ago",
+    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    time: "5h ago",
   },
   {
-    title: "Zero-Day Vulnerability in Chrome Browser",
-    description: "Google releases emergency update to fix actively exploited zero-day in V8 engine.",
+    title: "Dark Web Monitoring: Credential Leak Detected",
+    description: "Corporate credentials found in underground forums. Immediate password rotation and MFA enforcement recommended.",
     severity: "High",
-    type: "Zero-Day",
+    type: "Threat Intel",
     icon: Globe,
     color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
-    time: "6h ago",
+    time: "8h ago",
   },
   {
-    title: "New Data Protection Regulation in EU",
-    description: "European Commission proposes stricter guidelines for AI data processing and privacy.",
+    title: "SOC Metrics: MTTR Improvement Trend",
+    description: "Mean Time to Remediate decreased by 18% month-over-month. Detection resolution rates up across all security domains.",
     severity: "Info",
-    type: "Regulation",
-    icon: FileText,
-    color: "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400",
+    type: "SOC",
+    icon: Activity,
+    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
     time: "12h ago",
   },
   {
-    title: "Ransomware Group 'DarkSide' Resurfaces",
-    description: "New variant of DarkSide ransomware targeting healthcare institutions with double extortion tactics.",
-    severity: "Critical",
-    type: "Threat",
-    icon: Lock,
-    color: "bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400",
-    time: "1d ago",
-  },
-  {
-    title: "Cloud Storage Misconfiguration Leak",
-    description: "Major retailer exposes 1.5M customer records due to public S3 bucket permissions.",
+    title: "Cloud Security: AWS S3 Misconfiguration Alert",
+    description: "Multiple public S3 buckets detected across cloud environments. Automated remediation scripts deployed.",
     severity: "Medium",
-    type: "Incident",
+    type: "Cloud Security",
     icon: Server,
     color: "bg-yellow-100 text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-400",
     time: "1d ago",
   },
   {
-    title: "IoT Botnet 'Mirai' Variant Detected",
-    description: "New botnet targeting smart home devices for large-scale DDoS attacks.",
+    title: "Application Security: SAST Findings Trend",
+    description: "Quarter-over-quarter risk reduction of 12% in application security. Container security improvements noted.",
+    severity: "Info",
+    type: "AppSec",
+    icon: Lock,
+    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    time: "1d ago",
+  },
+  {
+    title: "Network Pentest: External Attack Surface Findings",
+    description: "External penetration testing reveals exploitable vulnerabilities in perimeter defenses. Prioritized remediation plan available.",
     severity: "High",
-    type: "Threat",
-    icon: Wifi,
+    type: "Pentest",
+    icon: ShieldAlert,
     color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
     time: "2d ago",
+  },
+  {
+    title: "Security Scorecard: Domain Risk Assessment",
+    description: "Quarterly security scorecard shows improvement in infrastructure security domain. High-risk findings summary available.",
+    severity: "Info",
+    type: "Scorecard",
+    icon: FileText,
+    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    time: "3d ago",
   },
 ]
 
@@ -73,7 +91,7 @@ export function NewsFeed() {
     <Card className="h-[500px] flex flex-col">
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between">
-          <CardTitle className="text-base font-semibold tracking-tight">Threat Intel & Security News</CardTitle>
+          <CardTitle className="text-base font-semibold tracking-tight">Threat Intelligence & Security Landscape</CardTitle>
           <Badge variant="outline" className="font-normal">
             Live Feed
           </Badge>
@@ -121,7 +139,7 @@ export function NewsFeed() {
                 {item.severity === "Info" && (
                   <Badge
                     variant="secondary"
-                    className="text-blue-600 bg-blue-100 dark:bg-blue-900/30 dark:text-blue-400 text-[10px] h-5 px-1.5"
+                    className="text-orange-600 bg-orange-100 dark:bg-orange-900/30 dark:text-orange-400 text-[10px] h-5 px-1.5"
                   >
                     Info
                   </Badge>
