@@ -27,7 +27,7 @@ const newsItems = [
     severity: "High",
     type: "Vulnerability",
     icon: AlertTriangle,
-    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    color: "bg-[#fa4616]/10 text-[#fa4616] dark:bg-[#fa4616]/30 dark:text-[#fa4616]",
     time: "5h ago",
   },
   {
@@ -36,7 +36,7 @@ const newsItems = [
     severity: "High",
     type: "Threat Intel",
     icon: Globe,
-    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    color: "bg-[#fa4616]/10 text-[#fa4616] dark:bg-[#fa4616]/30 dark:text-[#fa4616]",
     time: "8h ago",
   },
   {
@@ -45,7 +45,7 @@ const newsItems = [
     severity: "Info",
     type: "SOC",
     icon: Activity,
-    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    color: "bg-[#fa4616]/10 text-[#fa4616] dark:bg-[#fa4616]/30 dark:text-[#fa4616]",
     time: "12h ago",
   },
   {
@@ -63,7 +63,7 @@ const newsItems = [
     severity: "Info",
     type: "AppSec",
     icon: Lock,
-    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    color: "bg-[#fa4616]/10 text-[#fa4616] dark:bg-[#fa4616]/30 dark:text-[#fa4616]",
     time: "1d ago",
   },
   {
@@ -72,7 +72,7 @@ const newsItems = [
     severity: "High",
     type: "Pentest",
     icon: ShieldAlert,
-    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    color: "bg-[#fa4616]/10 text-[#fa4616] dark:bg-[#fa4616]/30 dark:text-[#fa4616]",
     time: "2d ago",
   },
   {
@@ -81,7 +81,7 @@ const newsItems = [
     severity: "Info",
     type: "Scorecard",
     icon: FileText,
-    color: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    color: "bg-[#fa4616]/10 text-[#fa4616] dark:bg-[#fa4616]/30 dark:text-[#fa4616]",
     time: "3d ago",
   },
 ]
@@ -123,7 +123,7 @@ export function NewsFeed() {
                 {item.severity === "High" && (
                   <Badge
                     variant="secondary"
-                    className="text-orange-600 bg-orange-100 dark:bg-orange-900/30 dark:text-orange-400 text-[10px] h-5 px-1.5"
+                    className="text-[#fa4616] bg-[#fa4616]/10 dark:bg-[#fa4616]/30 dark:text-[#fa4616] text-[10px] h-5 px-1.5"
                   >
                     High
                   </Badge>
@@ -139,7 +139,7 @@ export function NewsFeed() {
                 {item.severity === "Info" && (
                   <Badge
                     variant="secondary"
-                    className="text-orange-600 bg-orange-100 dark:bg-orange-900/30 dark:text-orange-400 text-[10px] h-5 px-1.5"
+                    className="text-[#fa4616] bg-[#fa4616]/10 dark:bg-[#fa4616]/30 dark:text-[#fa4616] text-[10px] h-5 px-1.5"
                   >
                     Info
                   </Badge>

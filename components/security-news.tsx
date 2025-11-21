@@ -68,8 +68,8 @@ export function SecurityNews() {
               >
                 <div className="mt-1">
                   {item.type === "alert" && <AlertTriangle className="h-4 w-4 text-destructive" />}
-                  {item.type === "warning" && <ShieldCheck className="h-4 w-4 text-orange-400" />}
-                  {item.type === "info" && <Info className="h-4 w-4 text-orange-400" />}
+                  {item.type === "warning" && <ShieldCheck className="h-4 w-4 text-[#fa4616]" />}
+                  {item.type === "info" && <Info className="h-4 w-4 text-[#fa4616]" />}
                 </div>
                 <div className="flex-1 space-y-1">
                   <div className="flex items-center justify-between">
@@ -88,7 +88,7 @@ export function SecurityNews() {
                         item.severity === "Critical"
                           ? "bg-destructive/20 text-destructive hover:bg-destructive/30"
                           : item.severity === "High"
-                            ? "bg-orange-500/20 text-orange-500 hover:bg-orange-500/30"
+                            ? "bg-[#fa4616]/20 text-[#fa4616] hover:bg-[#fa4616]/30"
                             : ""
                       }`}
                     >

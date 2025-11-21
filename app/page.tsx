@@ -24,42 +24,32 @@ export default function DashboardPage() {
             {/* <p className="text-slate-600 dark:text-slate-400 text-base font-normal leading-relaxed mb-3">
               Your security overview and threat intelligence dashboard. Real-time insights across all security domains.
             </p> */}
-            <div className="flex items-center gap-4">
-              <div className="flex items-center gap-2">
-                <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
-                <span className="text-sm font-medium text-slate-700 dark:text-slate-300">All Systems Operational</span>
-              </div>
-              <div className="h-4 w-px bg-slate-300 dark:bg-slate-700"></div>
-              <div className="text-sm text-slate-600 dark:text-slate-400">
-                Last updated: <span className="font-medium text-slate-800 dark:text-slate-300">Just now</span>
-              </div>
-            </div>
           </div>
         </div>
 
         {/* Quick Intelligence Section */}
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 p-8 md:p-10 text-white dark:shadow-none shadow-xl shadow-orange-200/50">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#fa4616] to-[#fa4616] p-8 md:p-10 text-white dark:shadow-none shadow-xl shadow-[#fa4616]/20">
           <div className="absolute top-0 right-0 -mt-10 -mr-10 h-64 w-64 rounded-full bg-white/10 blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 -mb-10 -ml-10 h-64 w-64 rounded-full bg-orange-400/20 blur-3xl"></div>
+          <div className="absolute bottom-0 left-0 -mb-10 -ml-10 h-64 w-64 rounded-full bg-[#fa4616]/20 blur-3xl"></div>
 
           <div className="relative z-10 max-w-3xl">
-            <div className="flex items-center gap-2 mb-4 text-orange-100">
+            <div className="flex items-center gap-2 mb-4 text-white/90">
               <Sparkles className="h-5 w-5" />
               <span className="font-medium text-sm uppercase tracking-wide">Quick Intelligence</span>
             </div>
             <h2 className="text-3xl font-semibold mb-2 tracking-tight leading-tight">What would you like to know today, Apurva?</h2>
-            <p className="text-orange-100/90 mb-6 text-sm font-normal leading-relaxed">Get instant insights from CrowdStrike, Tenable, JIRA, and other security tools across all domains.</p>
+            <p className="text-white/90 mb-6 text-sm font-normal leading-relaxed">Get instant insights from CrowdStrike, Tenable, JIRA, and other security tools across all domains.</p>
 
             <div className="relative mb-6">
               <Input
-                className="h-14 pl-6 pr-32 rounded-xl bg-white/10 border-white/20 text-white placeholder:text-orange-100/70 backdrop-blur-md focus-visible:ring-0 focus-visible:border-white/40 transition-all"
+                className="h-14 pl-6 pr-32 rounded-xl bg-white/10 border-white/20 text-white placeholder:text-white/70 backdrop-blur-md focus-visible:ring-0 focus-visible:border-white/40 transition-all"
                 placeholder="Ask about vulnerabilities, threat actors, or compliance status..."
               />
               <Button 
                 onClick={() => router.push('/chat')}
-                className="absolute right-2 top-2 h-10 bg-white text-orange-600 hover:bg-orange-50 font-medium rounded-lg transition-all hover:scale-105"
+                className="absolute right-2 top-2 h-10 bg-white text-[#fa4616] hover:bg-[#fa4616]/10 font-medium rounded-lg transition-all hover:scale-105"
               >
-                Ask AI Agent
+                Ask CISO Agent
               </Button>
             </div>
 
@@ -121,8 +111,8 @@ export default function DashboardPage() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
-                      <Shield className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                    <div className="h-10 w-10 rounded-lg bg-[#fa4616]/10 dark:bg-[#fa4616]/30 flex items-center justify-center">
+                      <Shield className="h-5 w-5 text-[#fa4616] dark:text-[#fa4616]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Vulnerability Management</h4>
@@ -144,7 +134,7 @@ export default function DashboardPage() {
                     <span className="font-semibold text-slate-900 dark:text-white">4.2 days</span>
                   </div>
                 </div>
-                <Button variant="link" className="px-0 text-orange-600 dark:text-orange-400 h-auto mt-4 text-xs font-medium w-full justify-center">
+                <Button variant="link" className="px-0 text-[#fa4616] dark:text-[#fa4616] h-auto mt-4 text-xs font-medium w-full justify-center">
                   View Trends & Insights <ArrowUpRight className="ml-1 h-3 w-3" />
                 </Button>
               </CardContent>
@@ -155,8 +145,8 @@ export default function DashboardPage() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
-                      <Shield className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                    <div className="h-10 w-10 rounded-lg bg-[#fa4616]/10 dark:bg-[#fa4616]/30 flex items-center justify-center">
+                      <Shield className="h-5 w-5 text-[#fa4616] dark:text-[#fa4616]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white text-sm">EDR - CrowdStrike</h4>
@@ -181,7 +171,7 @@ export default function DashboardPage() {
                     </span>
                   </div>
                 </div>
-                <Button variant="link" className="px-0 text-orange-600 dark:text-orange-400 h-auto mt-4 text-xs font-medium w-full justify-center">
+                <Button variant="link" className="px-0 text-[#fa4616] dark:text-[#fa4616] h-auto mt-4 text-xs font-medium w-full justify-center">
                   View Categories <ArrowUpRight className="ml-1 h-3 w-3" />
                 </Button>
               </CardContent>
@@ -192,8 +182,8 @@ export default function DashboardPage() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
-                      <Activity className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                    <div className="h-10 w-10 rounded-lg bg-[#fa4616]/10 dark:bg-[#fa4616]/30 flex items-center justify-center">
+                      <Activity className="h-5 w-5 text-[#fa4616] dark:text-[#fa4616]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white text-sm">SOC Metrics</h4>
@@ -219,7 +209,7 @@ export default function DashboardPage() {
                     <span className="font-semibold text-slate-900 dark:text-white">2.4 hours</span>
                   </div>
                 </div>
-                <Button variant="link" className="px-0 text-orange-600 dark:text-orange-400 h-auto mt-4 text-xs font-medium w-full justify-center">
+                <Button variant="link" className="px-0 text-[#fa4616] dark:text-[#fa4616] h-auto mt-4 text-xs font-medium w-full justify-center">
                   View Details <ArrowUpRight className="ml-1 h-3 w-3" />
                 </Button>
               </CardContent>
@@ -230,8 +220,8 @@ export default function DashboardPage() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
-                      <Cloud className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                    <div className="h-10 w-10 rounded-lg bg-[#fa4616]/10 dark:bg-[#fa4616]/30 flex items-center justify-center">
+                      <Cloud className="h-5 w-5 text-[#fa4616] dark:text-[#fa4616]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Cloud Security</h4>
@@ -253,7 +243,7 @@ export default function DashboardPage() {
                     <span className="font-semibold text-green-600 dark:text-green-400">-15%</span>
                   </div>
                 </div>
-                <Button variant="link" className="px-0 text-orange-600 dark:text-orange-400 h-auto mt-4 text-xs font-medium w-full justify-center">
+                <Button variant="link" className="px-0 text-[#fa4616] dark:text-[#fa4616] h-auto mt-4 text-xs font-medium w-full justify-center">
                   View by Environment <ArrowUpRight className="ml-1 h-3 w-3" />
                 </Button>
               </CardContent>
@@ -264,8 +254,8 @@ export default function DashboardPage() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
-                      <Network className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                    <div className="h-10 w-10 rounded-lg bg-[#fa4616]/10 dark:bg-[#fa4616]/30 flex items-center justify-center">
+                      <Network className="h-5 w-5 text-[#fa4616] dark:text-[#fa4616]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Network Pentest</h4>
@@ -287,7 +277,7 @@ export default function DashboardPage() {
                     <span className="font-semibold text-red-600 dark:text-red-400">5 Critical</span>
                   </div>
                 </div>
-                <Button variant="link" className="px-0 text-orange-600 dark:text-orange-400 h-auto mt-4 text-xs font-medium w-full justify-center">
+                <Button variant="link" className="px-0 text-[#fa4616] dark:text-[#fa4616] h-auto mt-4 text-xs font-medium w-full justify-center">
                   View Reports <ArrowUpRight className="ml-1 h-3 w-3" />
                 </Button>
               </CardContent>
@@ -298,8 +288,8 @@ export default function DashboardPage() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="h-10 w-10 rounded-lg bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center">
-                      <Code className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                    <div className="h-10 w-10 rounded-lg bg-[#fa4616]/10 dark:bg-[#fa4616]/30 flex items-center justify-center">
+                      <Code className="h-5 w-5 text-[#fa4616] dark:text-[#fa4616]" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white text-sm">Application Security</h4>
@@ -321,7 +311,7 @@ export default function DashboardPage() {
                     <span className="font-semibold text-slate-900 dark:text-white">Active</span>
                   </div>
                 </div>
-                <Button variant="link" className="px-0 text-orange-600 dark:text-orange-400 h-auto mt-4 text-xs font-medium w-full justify-center">
+                <Button variant="link" className="px-0 text-[#fa4616] dark:text-[#fa4616] h-auto mt-4 text-xs font-medium w-full justify-center">
                   View by Product <ArrowUpRight className="ml-1 h-3 w-3" />
                 </Button>
               </CardContent>
@@ -342,53 +332,7 @@ export default function DashboardPage() {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-xl bg-white dark:bg-slate-900/50 p-6 dark:shadow-none shadow-lg shadow-slate-200/50">
-              <h3 className="font-semibold text-slate-900 dark:text-white mb-6 text-lg tracking-tight">System Status</h3>
-              <div className="space-y-5">
-                <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800 last:border-0">
-                  <div className="flex flex-col">
-                    <span className="text-sm font-medium text-slate-900 dark:text-white">Network Monitor</span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">All systems operational</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="flex h-2 w-2 rounded-full bg-green-500 animate-pulse"></span>
-                    <span className="text-xs text-green-600 dark:text-green-400 font-medium">Active</span>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800 last:border-0">
-                  <div className="flex flex-col">
-                    <span className="text-sm font-medium text-slate-900 dark:text-white">Firewall Rules</span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">1,247 active rules</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="flex h-2 w-2 rounded-full bg-green-500"></span>
-                    <span className="text-xs text-green-600 dark:text-green-400 font-medium">Active</span>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between pb-3 border-b border-slate-100 dark:border-slate-800 last:border-0">
-                  <div className="flex flex-col">
-                    <span className="text-sm font-medium text-slate-900 dark:text-white">Identity Provider</span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Sync in progress</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="flex h-2 w-2 rounded-full bg-yellow-500 animate-pulse"></span>
-                    <span className="text-xs text-yellow-600 dark:text-yellow-400 font-medium">Syncing</span>
-                  </div>
-                </div>
-                <div className="flex items-center justify-between">
-                  <div className="flex flex-col">
-                    <span className="text-sm font-medium text-slate-900 dark:text-white">Cloud Agents</span>
-                    <span className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">12 agents deployed</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="flex h-2 w-2 rounded-full bg-green-500"></span>
-                    <span className="text-xs text-green-600 dark:text-green-400 font-medium">Active</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-xl bg-gradient-to-br from-orange-50 to-orange-50 dark:from-slate-900 dark:to-slate-800 p-6 dark:shadow-none shadow-lg shadow-slate-200/50">
+            <div className="rounded-xl bg-gradient-to-br from-[#fa4616]/5 to-[#fa4616]/5 dark:from-slate-900 dark:to-slate-800 p-6 dark:shadow-none shadow-lg shadow-slate-200/50">
               <h3 className="font-semibold mb-4 text-lg tracking-tight text-slate-900 dark:text-white">Security Programs & Domains</h3>
               <div className="space-y-3">
                 <div className="space-y-2">

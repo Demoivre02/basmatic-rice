@@ -76,18 +76,18 @@ export function ChatInterface({ onClose }: { onClose: () => void }) {
   return (
     <div className="flex flex-col h-full">
       {/* Chat Header */}
-      <div className="p-6 flex items-center justify-between bg-gradient-to-r from-orange-50 to-orange-50 dark:from-slate-900 dark:to-slate-800 dark:shadow-none shadow-sm">
+      <div className="p-6 flex items-center justify-between bg-gradient-to-r from-[#fa4616]/5 to-[#fa4616]/5 dark:from-slate-900 dark:to-slate-800 dark:shadow-none shadow-sm">
         <div className="flex items-center gap-4">
           <div className="relative">
             <div className="h-3 w-3 rounded-full bg-green-500 absolute -right-0.5 -bottom-0.5 ring-2 ring-white dark:ring-slate-900 animate-pulse" />
-            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
+            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-[#fa4616] to-[#fa4616] flex items-center justify-center shadow-lg shadow-[#fa4616]/20">
               <Shield className="h-6 w-6 text-white" />
             </div>
           </div>
           <div>
             <h3 className="font-semibold text-base tracking-tight text-slate-900 dark:text-white">CISO AI Agent</h3>
             <p className="text-xs text-slate-600 dark:text-slate-400 flex items-center gap-1.5 mt-0.5 font-normal">
-              <Sparkles className="h-3.5 w-3.5 text-orange-600 dark:text-orange-400" />
+              <Sparkles className="h-3.5 w-3.5 text-[#fa4616] dark:text-[#fa4616]" />
               <span>Online & Monitoring Threats</span>
             </p>
           </div>
@@ -128,7 +128,7 @@ export function ChatInterface({ onClose }: { onClose: () => void }) {
               <Avatar
                 className={`h-9 w-9 shrink-0 ${
                   msg.role === "assistant"
-                    ? "bg-gradient-to-br from-orange-500 to-orange-600"
+                    ? "bg-gradient-to-br from-[#fa4616] to-[#fa4616]"
                     : "bg-gradient-to-br from-slate-700 to-slate-800 dark:from-slate-600 dark:to-slate-700"
                 }`}
               >
@@ -144,7 +144,7 @@ export function ChatInterface({ onClose }: { onClose: () => void }) {
                 <div
                   className={`rounded-2xl px-4 py-3 text-sm leading-relaxed ${
                     msg.role === "user"
-                      ? "bg-gradient-to-br from-orange-500 to-orange-600 text-white dark:shadow-none shadow-md shadow-orange-500/20"
+                      ? "bg-gradient-to-br from-[#fa4616] to-[#fa4616] text-white dark:shadow-none shadow-md shadow-[#fa4616]/20"
                       : "bg-slate-100 dark:bg-slate-800/50 text-slate-900 dark:text-slate-100 dark:shadow-none shadow-sm"
                   }`}
                 >
@@ -168,7 +168,7 @@ export function ChatInterface({ onClose }: { onClose: () => void }) {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && handleSend()}
-            className="pr-24 h-12 rounded-xl bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 focus:border-orange-500 dark:focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 text-sm font-normal"
+            className="pr-24 h-12 rounded-xl bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 focus:border-[#fa4616] dark:focus:border-[#fa4616] focus:ring-2 focus:ring-[#fa4616]/20 text-sm font-normal"
           />
           <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1.5">
             <Button
@@ -180,7 +180,7 @@ export function ChatInterface({ onClose }: { onClose: () => void }) {
             </Button>
             <Button
               size="icon"
-              className="h-9 w-9 bg-gradient-to-br from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-lg shadow-md shadow-orange-500/30 hover:shadow-lg hover:shadow-orange-500/40 transition-all"
+              className="h-9 w-9 bg-gradient-to-br from-[#fa4616] to-[#fa4616] hover:from-[#fa4616] hover:to-[#fa4616]/90 text-white rounded-lg shadow-md shadow-[#fa4616]/30 hover:shadow-lg hover:shadow-[#fa4616]/40 transition-all"
               onClick={handleSend}
               disabled={!input.trim()}
             >
@@ -190,7 +190,7 @@ export function ChatInterface({ onClose }: { onClose: () => void }) {
         </div>
         <div className="flex items-center justify-center gap-4 mt-4">
           <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-            <Zap className="h-3.5 w-3.5 text-orange-600 dark:text-orange-400" />
+            <Zap className="h-3.5 w-3.5 text-[#fa4616] dark:text-[#fa4616]" />
             <span className="font-normal">Powered by AI</span>
           </div>
           <div className="h-3 w-px bg-slate-300 dark:bg-slate-700"></div>

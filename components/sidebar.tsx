@@ -22,7 +22,7 @@ export function Sidebar({ className }: SidebarProps) {
       <div className="space-y-4 py-4 flex flex-col h-full">
         <div className="px-3 py-2 flex-1">
           <div className="flex items-center gap-3 px-4 mb-10 mt-2">
-            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20">
+            <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#fa4616] to-[#fa4616] flex items-center justify-center shadow-lg shadow-[#fa4616]/20">
               <ShieldAlert className="h-6 w-6 text-white" />
             </div>
             <div>
@@ -80,10 +80,10 @@ export function Sidebar({ className }: SidebarProps) {
 
         <div className="px-3 py-2">
           <div className="bg-sidebar-accent rounded-xl p-4 mb-4 dark:shadow-none shadow-md shadow-slate-200/30">
-            <div className="flex items-center gap-3 mb-3">
+            {/* <div className="flex items-center gap-3 mb-3">
               <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
               <span className="text-xs font-semibold text-slate-900 dark:text-slate-100">System Operational</span>
-            </div>
+            </div> */}
             <div className="text-xs text-slate-600 dark:text-slate-400 font-normal">Last scan: 2 mins ago</div>
           </div>
           <Button variant="ghost" className="w-full justify-start text-muted-foreground hover:text-sidebar-foreground">
